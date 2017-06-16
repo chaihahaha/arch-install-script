@@ -1,0 +1,20 @@
+# 
+# /etc/fstab: static file system information
+#
+# <file system>	<dir>	<type>	<options>	<dump>	<pass>
+# /dev/sda6
+UUID=96d099e8-96db-4ad6-baa1-fbaf44b5ec43	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/sda7
+UUID=d4203b2c-13c1-488f-a364-5a2e928b4f36	/home     	ext4      	rw,relatime,data=ordered	0 2
+UUID=3C24FC1224FBCCC0	/home/chai/media/C     	ntfs      	defaults,user,rw,iocharset=utf8,umask=000,nls=utf8          0 2
+UUID=90ECFECDECFEAC9A	/home/chai/media/D     	ntfs      	defaults,user,rw,iocharset=utf8,umask=000,nls=utf8          0 2
+/dev/sdb1	/home/chai/media/U     	vfat      	noauto,user,rw,iocharset=utf8,umask=000          0 2
+/dev/sdb1	/home/chai/media/Un     	ntfs      	noauto,user,rw,iocharset=utf8,umask=000          0 2
+/dev/sdb2	/home/chai/media/U2     	vfat      	noauto,user,rw,iocharset=utf8,umask=000          0 2
+/dev/sdb2	/home/chai/media/Un2     	ntfs      	noauto,user,rw,iocharset=utf8,umask=000          0 2
+/dev/sdb1	/home/chai/media/U3     	vfat      	noauto,user,rw,iocharset=utf8,umask=000          0 2
+/dev/sdb1	/home/chai/media/Un3    	ntfs      	noauto,user,rw,iocharset=utf8,umask=000          0 2
+/dev/cdrom      /home/chai/media/Cdrom          iso9660         noauto,user,rw,iocharset=utf8,umask=000          0 2
+jmtpfs         /home/chai/media/phone           fuse            nodev,allow_other,rw,user,noauto,noatime,uid=1000,gid=1000 0 2
+jmtpfs         /home/chai/media/phone1          fuse            nodev,allow_other,rw,user,noauto,noatime,uid=1000,gid=1000 0 2

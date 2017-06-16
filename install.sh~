@@ -1,0 +1,12 @@
+pacman -S iw dialog wpa_supplicant sudo efibootmgr grub xorg-server xorg-xinit xorg-utils xorg-server-utils openbox alsa-utils alsa-oss nautilus emacs fcitx evince git iwconfig networkmanager network-manager-applet mplayer alsa-plugins obconf nautilus-open-terminal slim tint2 wbar nitrogen obmenu tint2conf lxappearance pcmanfm scrot lsb-release fcitx-configtool  crypto++ qt5-base libuv swig doxygen c-ares qt5-tools libpng12 xdg-utils glu  qt5-multimedia qt5-x11extras gst-libav gst-plugins-ugly gnome-themes-standard gimp inkscape ntfs-3g ntp texlive-most texlive-lang yajl dosfstools tuxguitar gvfs-mtp
+rm /etc/pacman.conf
+cp ~/pacman.conf /etc/
+cp ~/asound.conf /etc/
+pacman -Sy
+pacman -S yaourt
+yaourt -S masterpdfeditor4
+yaourt -S netease-cloud-music
+yaourt -S libtinfo
+useradd -m -g users -G audio,lp,optical,storage,video,wheel,games,power -s /bin/bash chai
+passwd chai
+timedatectl set-ntp true
