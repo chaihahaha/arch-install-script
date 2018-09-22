@@ -1,0 +1,7 @@
+  () = evalfile("emacs");        % Emacs-like bindings
+%  %  () = evalfile("edt");          % EDT emulation
+%  %  () = evalfile ("ide");         % Borland IDE (see also
+%  doc/ide-mode.txt)
+%  %  () = evalfile ("brief");       % Brief Keybindings (MSDOS only!!)
+%  %  () = evalfile("wordstar");     % obsolete --- use ide instead)
+%  %  () = evalfile ("cua");         % CUA-like key bindings
