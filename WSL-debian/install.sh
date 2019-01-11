@@ -1,7 +1,11 @@
-#ln -s /mnt/d/ubuntu/ ~/win
+#!/bin/bash
+ln -s /mnt/d/ubuntu/ ~/win
+cp ~/win/.bashrc ~/
+sudo cp ~/win/sources.list /etc/apt/
+source ~/.bashrc
 sudo apt update
 sudo apt full-upgrade
-sudo apt install git man sqlite3 openssh-client gdb binutils jed jed-extra haskell-platform build-essential npm docker.io ffmpeg aubio-tools lua5.3
+sudo apt install git man sqlite3 openssh-client gdb binutils jed jed-extra haskell-platform build-essential ffmpeg aubio-tools lua5.3
 #bash /mnt/d/linuxopen/linuxOpen/Anaconda3-4.2.0-Linux-x86_64.sh
 git config --global user.mail "836275709@qq.com"
 git config --global user.name "chaihahaha"
