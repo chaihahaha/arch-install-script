@@ -115,4 +115,4 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-export PATH="/mnt/d/ubuntu/anaconda/bin:$PATH"
+export PATH="/mnt/e/ubuntu/anaconda/bin:$PATH"
